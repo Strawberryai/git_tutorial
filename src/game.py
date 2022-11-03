@@ -21,6 +21,7 @@ blue = pygame.Color(0, 0, 255)
 # Initialising pygame
 pygame.init()
 
+
 # Initialise game window
 pygame.display.set_caption('Git_tutorial')
 icon = pygame.image.load('../assets/game/icon.png')
@@ -45,6 +46,14 @@ fruit_position = [random.randrange(1, (window_x//size)) * size,
 
 fruit_spawn = True
 
+# Load sprites
+sheet = pygame.image.load('../assets/game/spritesheet.png').convert()
+
+rect = pygame.Rect((0, 192, 64, 64)) 
+apple_sp = pygame.Surface(rect.size).convert()
+apple_sp.blit(sheet, (0, 0), rect)
+apple_sp = pygame.transform.scale(apple_sp, (size, size))
+
 # setting default snake direction towards
 # right
 direction = 'RIGHT'
@@ -60,7 +69,8 @@ def draw():
         pygame.draw.rect(game_window, green, pygame.Rect(pos[0], pos[1], size, size))
 
     # draw apple
-    pygame.draw.rect(game_window, white, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
+    # pygame.draw.rect(game_window, white, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
+    game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
 
 
 # displaying Score function
