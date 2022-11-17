@@ -8,7 +8,7 @@ práctico.
 # Instalación y configuración
 
 En este turorial vamos a hacer uso de varias herramientas. Entre ellas
-necesitaremos una cuenta de GitHub, un cliente de git y Python3 intalado.
+necesitaremos una cuenta de GitHub (opcional pero recomendado), un cliente de git y Python3 instalado (opcional).
 
 ## Cuenta de GitHub
 
