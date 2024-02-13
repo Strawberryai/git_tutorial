@@ -1,4 +1,4 @@
-#!/Users/alangarcia/Documents/Dev/git_tutorial/venv/bin/python3
+#!/home/ag6154lk/git_tutorial/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

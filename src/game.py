@@ -48,6 +48,8 @@ fruit_spawn = True
 
 # Load sprites
 sheet = pygame.image.load('../assets/game/spritesheet.png').convert()
+#lansa = pygame.image.load('../assets/game/tulepera.jpeg')
+#lansa = pygame.transform.scale(lansa, (size, size))
 
 rect = pygame.Rect((0, 192, 64, 64)) 
 apple_sp = pygame.Surface(rect.size).convert()
@@ -70,7 +72,8 @@ def draw():
 
     # draw apple
     pygame.draw.rect(game_window, red, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
-    # game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
+    #game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
+    #game_window.blit(lansa, (fruit_position[0], fruit_position[1]))
 
 
 # displaying Score function
@@ -116,7 +119,15 @@ def game_over():
     # quit the program
     quit()
 
+def luis_lansa():
+    lansa = pygame.image.load('../assets/game/tulepera.jpeg')
 
+    pygame.display.set_caption('Luis Lansa')
+    game_window = pygame.display.set_mode((lansa.get_width(), lansa.get_height()))
+    
+    while True:
+        game_window.blit(lansa, (0, 0))
+        pygame.display.update()
 # Main Function
 while True:
 	
