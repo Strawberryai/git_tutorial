@@ -74,6 +74,7 @@ def draw():
     #pygame.draw.rect(game_window, red, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
     #game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
     game_window.blit(lansa, (fruit_position[0], fruit_position[1]))
+    print("sdalfhkakesjhf")
 
 
 # displaying Score function
