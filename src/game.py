@@ -48,8 +48,8 @@ fruit_spawn = True
 
 # Load sprites
 sheet = pygame.image.load('../assets/game/spritesheet.png').convert()
-#lansa = pygame.image.load('../assets/game/tulepera.jpeg')
-#lansa = pygame.transform.scale(lansa, (size, size))
+lansa = pygame.image.load('../assets/game/tulepera.jpeg')
+lansa = pygame.transform.scale(lansa, (size, size))
 
 rect = pygame.Rect((0, 192, 64, 64)) 
 apple_sp = pygame.Surface(rect.size).convert()
@@ -71,9 +71,9 @@ def draw():
         pygame.draw.rect(game_window, green, pygame.Rect(pos[0], pos[1], size, size))
 
     # draw apple
-    pygame.draw.rect(game_window, red, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
+    #pygame.draw.rect(game_window, red, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
     #game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
-    #game_window.blit(lansa, (fruit_position[0], fruit_position[1]))
+    game_window.blit(lansa, (fruit_position[0], fruit_position[1]))
 
 
 # displaying Score function
