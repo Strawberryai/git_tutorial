@@ -72,13 +72,8 @@ def draw():
 
     # draw apple
     #pygame.draw.rect(game_window, red, pygame.Rect(fruit_position[0], fruit_position[1], size, size))
-<<<<<<< HEAD
-    game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
-    #game_window.blit(lansa, (fruit_position[0], fruit_position[1]))
-=======
     #game_window.blit(apple_sp, (fruit_position[0], fruit_position[1]))
     game_window.blit(lansa, (fruit_position[0], fruit_position[1]))
->>>>>>> 66d4c94e1054ff7847dea3d95d18686e2f0a115e
 
 
 # displaying Score function
